@@ -25,5 +25,6 @@ internal class Program
                 Console.WriteLine($"{u.Id}.{u.Name} - {u.Age}");
             }
         }
+
     }
 }

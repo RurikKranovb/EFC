@@ -11,7 +11,7 @@ namespace SQLite.Core
     internal class ApplicationContext : DbContext
     {
         public DbSet<User> Users => Set<User>();
-        public ApplicationContext() => Database.EnsureCreated();
+        public ApplicationContext() => Database.EnsureCreated();// гарантирует, что БД создана
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
